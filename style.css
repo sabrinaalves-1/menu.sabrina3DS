@@ -1,0 +1,108 @@
+/* Estilos básicos */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--cor-de-fundo);
+  color: var(--branco-principal);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu lateral direito */
+.menu {
+  background-color: #007BFF;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu li {
+  margin: 10px 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* Layout da página principal */
+main {
+  padding-top: 60px;
+  margin-right: 200px;
+}
+
+/* Conteúdo centralizado com imagem e texto */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap; /* responsivo para telas menores */
+}
+
+.image-container {
+  max-width: 400px;
+  width: 100%;
+  aspect-ratio: 1/1; /* mantém a imagem quadrada */
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Container do texto */
+.text-container {
+  max-width: 600px;
+  line-height: 1.6;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Títulos */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Variáveis de cores */
+:root {
+  --branco-principal: #FFFFFF;
+  --cinza-secundario: #C0C0C0;
+  --botao-azul: #167BF7;
+  --cor-de-fundo: #b3b7f3;
+}
